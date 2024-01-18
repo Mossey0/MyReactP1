@@ -1,0 +1,105 @@
+:root {
+  --small-text: 1.5rem;
+  --medium-text: 2.0rem;
+  --big-text: 2.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+
+.page {
+  background-color: rgb(1, 1, 24);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-box {
+  background-color: aliceblue;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.header {
+  height: 10%;
+  text-align: center;
+}
+.header h1 {
+  font-size: var(--big-text);
+
+}
+
+.main {
+  max-height: 70%;
+}
+
+.main--container-ul {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  list-style: none;
+}
+.calculations {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.calculations div ul{
+  list-style: none;
+}
+.calculations div > *, .calculations div ul li {
+  margin-bottom: 10px ;
+}
+
+.tab {
+  background-color: rgba(60, 75, 106, 0.537);
+  width: 15%;
+  text-align: center;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.tab li {
+  font-size: var(--medium-text);
+}
+.content-show {
+  display: block;
+}
+
+.no-content {
+  display: none;
+}
+
+.calculated-salary {
+  margin-top: 20px;
+}
+
+.calculated-salary h2 {
+  margin-bottom: 10px;
+  font-size: var(--small-text);
+}
+
+.divider {
+  margin-top: 10px;
+  width: 90%;
+  border-top: 1px solid black;
+  margin-left: 10px;
+}
+.lower-divider {
+  margin-top: 30px;
+}
+.warning {
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(236, 122, 122);
+}
